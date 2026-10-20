@@ -108,9 +108,6 @@ InitTestScene*.unity*
 # Auto-generated cache in Assets folder
 **/[Aa]ssets/[Ss]ceneDependencyCache*
 
-# Personal dev/scratch folder — created by Asset Structure Validator
-**/[Aa]ssets/[Pp]roject/[Dd]ev/
-
 # Ignore everything under Assets/ except Editor, Project, and Settings
 **/Assets/*
 !**/Assets/Editor/
@@ -160,5 +157,11 @@ InitTestScene*.unity*
 *.avi
 *.webm
 
-# Asset meta data should only be ignored when the corresponding asset is also ignored
-!**/[Aa]ssets/**/*.meta
+# Track meta files only for the three managed folders
+!**/[Aa]ssets/[Ee]ditor/**/*.meta
+!**/[Aa]ssets/[Pp]roject/**/*.meta
+!**/[Aa]ssets/[Ss]ettings/**/*.meta
+
+# Re-ignore Dev folder (overrides meta exception above)
+**/[Aa]ssets/[Pp]roject/[Dd]ev/
+**/[Aa]ssets/[Pp]roject/[Dd]ev/**
