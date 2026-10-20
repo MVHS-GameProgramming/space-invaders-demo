@@ -108,6 +108,8 @@ InitTestScene*.unity*
 # Auto-generated cache in Assets folder
 **/[Aa]ssets/[Ss]ceneDependencyCache*
 
+# Personal dev/scratch folder — created by Asset Structure Validator
+**/[Aa]ssets/[Pp]roject/[Dd]ev/
 
 # Binary Assets — managed via MVHS Asset Pipeline Manager
 # These files are distributed as .unitypackage exports, NOT committed to Git.
