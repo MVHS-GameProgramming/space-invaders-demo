@@ -111,6 +111,15 @@ InitTestScene*.unity*
 # Personal dev/scratch folder — created by Asset Structure Validator
 **/[Aa]ssets/[Pp]roject/[Dd]ev/
 
+# Ignore everything under Assets/ except Editor, Project, and Settings
+Assets/*
+!Assets/Editor/
+!Assets/Editor/**
+!Assets/Project/
+!Assets/Project/**
+!Assets/Settings/
+!Assets/Settings/**
+
 # Binary Assets — managed via MVHS Asset Pipeline Manager
 # These files are distributed as .unitypackage exports, NOT committed to Git.
 # Only the corresponding .meta files are tracked (they carry Unity GUIDs).
