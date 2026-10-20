@@ -1,0 +1,31 @@
+{
+    "exportedBy": "Aaron Petrek",
+    "exportDate": "2026-10-19T21:20:31",
+    "description": "Added sprite for player ship",
+    "folders": [
+        {
+            "folderPath": "Assets/Project/Art/Sprites/",
+            "files": [
+                "Assets/Project/Art/Sprites/spiked ship 3. small.blue_.PNG"
+            ]
+        },
+        {
+            "folderPath": "Assets/Project/Dev/PETREK/",
+            "files": [
+                "Assets/Project/Dev/PETREK/Dev Scene.unity"
+            ]
+        },
+        {
+            "folderPath": "Assets/Project/Prefabs/",
+            "files": [
+                "Assets/Project/Prefabs/Player.prefab"
+            ]
+        },
+        {
+            "folderPath": "Assets/Project/Scripts/",
+            "files": [
+                "Assets/Project/Scripts/PlayerMovement.cs"
+            ]
+        }
+    ]
+}
