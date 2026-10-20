@@ -111,8 +111,8 @@ namespace MVHS
 
                 string assetExtension = Path.GetExtension(assetPath).ToLower();
 
-                // TODO: Max fix in MVHS Unity Editor Tools
-                if (assetPath.Contains("Assets/Project/Dev/", StringComparison.OrdinalIgnoreCase) && assetExtension == ".unity")
+                // TODO: Make fix in MVHS Unity Editor Tools
+                if (assetPath.Contains("Assets/Project/Dev/", StringComparison.OrdinalIgnoreCase))
                 {
                     continue;
                 }
