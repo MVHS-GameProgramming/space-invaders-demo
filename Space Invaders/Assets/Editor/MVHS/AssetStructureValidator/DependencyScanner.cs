@@ -111,6 +111,12 @@ namespace MVHS
 
                 string assetExtension = Path.GetExtension(assetPath).ToLower();
 
+                // TODO: Max fix in MVHS Unity Editor Tools
+                if (assetPath.Contains("Assets/Project/Dev/", StringComparison.OrdinalIgnoreCase) && assetExtension == ".unity")
+                {
+                    continue;
+                }
+
                 string requiredFolder = "";
                 ValidateResult validateResult = validatorRules.Validate(assetPath);
                 if (validateResult == ValidateResult.Pass)
