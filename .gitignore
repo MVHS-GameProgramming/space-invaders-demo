@@ -112,13 +112,13 @@ InitTestScene*.unity*
 **/[Aa]ssets/[Pp]roject/[Dd]ev/
 
 # Ignore everything under Assets/ except Editor, Project, and Settings
-Assets/*
-!Assets/Editor/
-!Assets/Editor/**
-!Assets/Project/
-!Assets/Project/**
-!Assets/Settings/
-!Assets/Settings/**
+**/Assets/*
+!**/Assets/Editor/
+!**/Assets/Editor/**
+!**/Assets/Project/
+!**/Assets/Project/**
+!**/Assets/Settings/
+!**/Assets/Settings/**
 
 # Binary Assets — managed via MVHS Asset Pipeline Manager
 # These files are distributed as .unitypackage exports, NOT committed to Git.
