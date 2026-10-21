@@ -91,7 +91,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &4637788736214995244
+--- !u!1 &287153409740332180
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 507489004755962204}
+  - component: {fileID: 5634110287442777757}
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
@@ -107,16 +107,16 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &507489004755962204
+--- !u!4 &5634110287442777757
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4637788736214995244}
+  m_GameObject: {fileID: 287153409740332180}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -132,7 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4685006092151015128}
   - component: {fileID: 3970029231874686519}
-  - component: {fileID: 6360193642167415668}
+  - component: {fileID: 7481950533582736753}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -154,7 +154,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2076029460509139811}
-  - {fileID: 507489004755962204}
+  - {fileID: 5634110287442777757}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3970029231874686519
@@ -173,7 +173,7 @@ MonoBehaviour:
   _drag: 1.5
   _LeftScreenPositionClamp: -2.4
   _RightScreenPositionClamp: 2.4
---- !u!114 &6360193642167415668
+--- !u!114 &7481950533582736753
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6981777487780925441}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5b8c64778925c148a7cb173e3d04aca, type: 3}
+  m_Script: {fileID: 11500000, guid: 6110e877f6e48e745b111ca301549842, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthComponent
-  _maxHealth: 100
-  _startingHealth: 100
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerFire
+  _projectilePrefab: {fileID: 0}
+  _firePoint: {fileID: 5634110287442777757}
