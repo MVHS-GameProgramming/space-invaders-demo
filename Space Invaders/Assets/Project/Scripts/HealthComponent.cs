@@ -20,20 +20,30 @@ public class HealthComponent : MonoBehaviour
     void Start()
     {
         Health = Mathf.Min(_startingHealth, _maxHealth);
-        IsDead = Health > 0f;
+        IsDead = Health <= 0f;
     }
 
     public void dealDamage(float amount)
     {
-        Health = Mathf.Clamp(Health - amount, 0, _maxHealth);
-        IsDead = Health == 0f;
-        OnHealthChanged?.Invoke(Health);
-
+        float newHealth = Mathf.Clamp(Health - amount, 0, _maxHealth);
+        if (newHealth != Health)
+        {
+            Health = newHealth;
+            IsDead = Health == 0f;
+            OnHealthChanged?.Invoke(Health);
+        }
     }
 
     public void giveHealth(float amount)
     {
-        Health = Mathf.Clamp(Health + amount, 0, _maxHealth);
-        OnHealthChanged?.Invoke(Health);
+        if (!IsDead)
+        {
+            float newHealth = Mathf.Clamp(Health + amount, 0, _maxHealth);
+            if (newHealth != Health)
+            {
+                Health = newHealth;
+                OnHealthChanged?.Invoke(Health);
+            }
+        }
     }
 }
