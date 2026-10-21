@@ -101,6 +101,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4685006092151015128}
   - component: {fileID: 3970029231874686519}
+  - component: {fileID: 6360193642167415668}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -140,3 +141,17 @@ MonoBehaviour:
   _drag: 1.5
   _LeftScreenPositionClamp: -2.4
   _RightScreenPositionClamp: 2.4
+--- !u!114 &6360193642167415668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6981777487780925441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5b8c64778925c148a7cb173e3d04aca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HealthComponent
+  _maxHealth: 100
+  _startingHealth: 100
