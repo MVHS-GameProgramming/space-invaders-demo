@@ -185,5 +185,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6110e877f6e48e745b111ca301549842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerFire
-  _projectilePrefab: {fileID: 0}
+  _projectilePrefab: {fileID: 6829426070071017225, guid: 16c2c30e7b9144d4b87339b448d1f8a9, type: 3}
   _firePoint: {fileID: 5634110287442777757}
